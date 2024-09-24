@@ -14,8 +14,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        P4D_VERSION: ["21.1", "21.2", "22.1"]
-        DSM_VERSION: ["7.1", "7.2"]
+        P4D_VERSION: ["22.1"]
+        DSM_VERSION: ["7.1"]
         include:
           - SPK_PLATFORM: braswell
             SPK_ARCH: x86

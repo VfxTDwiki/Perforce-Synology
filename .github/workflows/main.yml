@@ -14,10 +14,10 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        P4D_VERSION: ["22.1"]
+        P4D_VERSION: ["22.2"]
         DSM_VERSION: ["7.1"]
         include:
-          - SPK_PLATFORM: braswell
+          - SPK_PLATFORM: base
             SPK_ARCH: x86
     uses: ./.github/workflows/build-package.yml
     with:

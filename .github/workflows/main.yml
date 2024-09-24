@@ -14,11 +14,11 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        P4D_VERSION: ["23.1", "23.2", "24.1"]
+        P4D_VERSION: ["21.1", "21.2", "22.1"]
         DSM_VERSION: ["7.1", "7.2"]
         include:
           - SPK_PLATFORM: braswell
-            SPK_ARCH: x86_64
+            SPK_ARCH: x86
     uses: ./.github/workflows/build-package.yml
     with:
       P4D_VERSION: ${{ matrix.P4D_VERSION }}

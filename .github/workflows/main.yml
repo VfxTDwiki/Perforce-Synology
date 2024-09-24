@@ -18,7 +18,7 @@ jobs:
         DSM_VERSION: ["7.1"]
         include:
           - SPK_PLATFORM: evansport
-            SPK_ARCH: x86
+            SPK_ARCH: i686
     uses: ./.github/workflows/build-package.yml
     with:
       P4D_VERSION: ${{ matrix.P4D_VERSION }}
